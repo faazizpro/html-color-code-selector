@@ -1,19 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Background CHanger</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.46.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body id="bg-change">
-    <h1 class="text-center text-2xl md:text-3xl mt-5 lg:mt-10 font-medium md:font-bold">HTML Color Code Selector</h1>
+  </head>
+  <body id="bg-change">
+    <h1
+      class="text-center text-2xl md:text-3xl mt-5 lg:mt-10 font-medium md:font-bold"
+    >
+      HTML Color Code Selector
+    </h1>
     <div class="w-3/4 mx-auto border-2 border-gray-400 mt-5">
-        <h1 class="text-xl lg:text-3xl font-semibold underline underline-offset-1 mb-3 md:ml-2">Red HTML Color Codes</h1>
-        <!-- Table -->
+      <h1
+        class="text-xl lg:text-3xl font-semibold underline underline-offset-1 mb-3 md:ml-2"
+      >
+        Red HTML Color Codes
+      </h1>
+      <!-- Table -->
+      <div>
+        <div class="overflow-x-auto w-full">
+          <table class="table w-full">
+            <!-- head -->
+            <thead>
+              <tr>
+                <th>Color Name</th>
+                <th>Color Code</th>
+                <th>Copy Code</th>
+                <th>Change Color</th>
+                <th>Color Box</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- row 1 -->
+              <tr>
+                <td>
+                  <div class="flex items-center space-x-3">
+                    <div class="avatar">
+                      <div class="mask mask-squircle indianRed w-12 h-12"></div>
+                    </div>
+                    <div>
+                      <div class="font-bold">IndianRed</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="font-bold">#CD5C5C</div>
+                </td>
+                <td>
+                  <button
+                    class="rounded-full font-bold hover:transition-all transform hover:scale-110 duration-500 bg-cyan-300 px-2 py-1"
+                  >
+                    Click to Copy
+                  </button>
+                </td>
+                <td>
+                  <button class="py-2 px-4 bg-black text-white rounded-full font-semibold">Click to Change </button>
+                </td>
+                <td>
+                    <div class="bg-red-500 mask mask-squircle w-12 h-12"></div>
+                </td>
+              </tr>
+              <!-- row 2 -->
+              <!-- row 3 -->
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
